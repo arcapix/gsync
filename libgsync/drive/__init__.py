@@ -813,7 +813,7 @@ class Drive(object):
         debug(" * merging properties...")
         body = {}
         for key, val in properties.iteritems():
-            if v is not None:
+            if val is not None:
                 body[key] = Drive.utf8(val)
 
         # Retain the title from the path being created.
